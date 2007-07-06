@@ -1,0 +1,26 @@
+---
+name: Pod-Manual
+version: 0.01
+author:
+  - 'Yanick Champoux <yanick@cpan.org>'
+abstract: Aggregates several PODs into a single manual
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Object::InsideOut: 0
+  Test::More: 0
+  XML::XPathScript: 1.51
+  version: 0
+provides:
+  Pod::Manual:
+    file: lib/Pod/Manual.pm
+    version: 0.01
+  Pod::Manual::Docbook2LaTeX:
+    file: lib/Pod/Manual/Docbook2LaTeX.pm
+  Pod::Manual::PodXML2Docbook:
+    file: lib/Pod/Manual/PodXML2Docbook.pm
+generated_by: Module::Build version 0.2806
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
