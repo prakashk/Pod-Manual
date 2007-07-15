@@ -16,7 +16,7 @@ use XML::XPathScript;
 use Pod::Manual::PodXML2Docbook;
 use Pod::Manual::Docbook2LaTeX;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my @parser_of        :Field;
 my @dom_of           :Field;
@@ -70,7 +70,7 @@ sub _get_podxml {
 
     my $dom = eval { 
         $parser_of[ $$self ]->parse_string( $podxml ) 
-    } or die "error while converting raw pod to xml: $@";
+    } or die "error while converting raw pod to xml for '$pod': $@";
 
     return $dom;
 }
@@ -184,11 +184,11 @@ sub save_as_pdf {
         chdir $1 or croak "can't chdir to $1: $!";
     }
 
-    for my $ext ( qw/ aux log pdf tex toc / ) {
-        next unless -e "$filename.$ext";
-
+    my @temp_files = grep { -e } map "$filename.$_" => qw/ aux log pdf tex toc /;
+    if ( @temp_files ) {
         chdir $original_dir;
-        croak "file $filename.$ext already exists";
+        croak "temp files " . join( ' ', @temp_files )
+                            . " already exists, please remove";
         return 0;
     }
 
@@ -202,7 +202,7 @@ sub save_as_pdf {
    close $latex_fh;
 
     for ( 1..2 ) {       # two times to populate the toc
-        system "pdflatex $filename > /dev/null"
+        system "pdflatex -interaction=batchmode $filename > /dev/null"
             and croak "problem running pdflatex: $!";
     }
 
@@ -244,7 +244,7 @@ Pod::Manual - Aggregates several PODs into a single manual
 
 =head1 VERSION
 
-This document describes Pod::Manual version 0.01
+This document describes Pod::Manual version 0.02
 
 As you can guess from the very low version number, this release
 is alpha quality. Use with caution.
@@ -302,6 +302,12 @@ Adds the pod of I<$module> to the manual.
 Returns the manual in a docbook format. If the option I<css> 
 is given, a 'xml-stylesheet' PI pointing to I<$filename> will
 be added to the document. 
+
+=head2 as_latex
+
+    print $manual->as_latex;
+
+Returns the manual in a LaTeX format.
 
 =head2 save_as_pdf( $filename )
 
