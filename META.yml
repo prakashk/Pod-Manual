@@ -1,6 +1,6 @@
 ---
 name: Pod-Manual
-version: 0.02
+version: 0.03
 author:
   - 'Yanick Champoux <yanick@cpan.org>'
 abstract: Aggregates several PODs into a single manual
@@ -15,7 +15,7 @@ requires:
 provides:
   Pod::Manual:
     file: lib/Pod/Manual.pm
-    version: 0.02
+    version: 0.03
   Pod::Manual::Docbook2LaTeX:
     file: lib/Pod/Manual/Docbook2LaTeX.pm
   Pod::Manual::PodXML2Docbook:
