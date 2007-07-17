@@ -15,7 +15,7 @@ use XML::XPathScript;
 use Pod::Manual::PodXML2Docbook;
 use Pod::Manual::Docbook2LaTeX;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my @parser_of        :Field;
 my @dom_of           :Field;
@@ -243,7 +243,7 @@ Pod::Manual - Aggregates several PODs into a single manual
 
 =head1 VERSION
 
-This document describes Pod::Manual version 0.04
+This document describes Pod::Manual version 0.05
 
 As you can guess from the very low version number, this release
 is alpha quality. Use with caution.
@@ -293,6 +293,12 @@ in I<@section_names>.
     $manual->add_chapter( 'Pod::Manual' );
 
 Adds the pod of I<$module> to the manual.
+
+=head2 add_chapters( I<@modules> )
+
+    $manual->add_chapters( 'Some::Module', 'Some::Other::Module' )
+
+Adds the pod of several modules to the manual.
 
 =head2 as_docbook( I< { css => $filename } > )
 
