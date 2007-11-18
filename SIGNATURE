@@ -1,0 +1,39 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 08f2c98c7d97d03495674bc9f9d4a7730c6249c7 Build.PL
+SHA1 2f2bd26e3c28bdb18e3faa1f86ad308c0106ec70 Changes
+SHA1 37730c6c0fd4efd477c43191743209bb3d83d1ec MANIFEST
+SHA1 8e16677407817869cf6bd08998166c87fd9fbf76 META.yml
+SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
+SHA1 9c0c02495dd00918e56382a28ef8c37686725d80 README
+SHA1 78790f0f90c3509c7868b999b9369a5f5a2e788d examples/catalyst_manual.pl
+SHA1 a6523d5e171f0966a99b47cc739dc311015c5cec examples/rose-db-object.pl
+SHA1 29bf3d9b92d122caf5d29677ff3442842d20c36c lib/Pod/Manual.pm
+SHA1 3b38d7b4ee829c145c41eeb96528dd8fc5760f86 lib/Pod/Manual/Docbook2LaTeX.pm
+SHA1 67614f063c8015207deb1d45dae7ae2fa1b7b3da lib/Pod/Manual/PodXML2Docbook.pm
+SHA1 93dfdf08dfdfc906e1c99fa7b3bb32df32e4113b t/01general.t
+SHA1 a3321ae23a1febb2606d247dc6b8d1caea16f586 t/90pod-coverage.t
+SHA1 ad927b0c794e42c5c75d4d59c8ae7e0ae0e7f5dc t/91perlcritic.t
+SHA1 64d09dde86921bf20644c29d7a47628e12cb3693 t/92pod.t
+SHA1 c0aff3075c78d8a9fd6b991a326fa973103290d3 t/99signature.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.3 (GNU/Linux)
+
+iD8DBQFHP5li34Hwf+GwC4wRArNYAJ9mxq+R1Kg4znuBBL1AV+6MHG/5pwCg1WtT
+RSkrisqT7WUBlSC98eEnGo8=
+=AUXK
+-----END PGP SIGNATURE-----

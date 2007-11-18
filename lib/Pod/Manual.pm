@@ -15,7 +15,7 @@ use XML::XPathScript;
 use Pod::Manual::PodXML2Docbook;
 use Pod::Manual::Docbook2LaTeX;
 
-our $VERSION = '0.06';
+our $VERSION = '0.06.01';
 
 my @parser_of        :Field;
 my @dom_of           :Field;
@@ -243,7 +243,7 @@ Pod::Manual - Aggregates several PODs into a single manual
 
 =head1 VERSION
 
-This document describes Pod::Manual version 0.06
+This document describes Pod::Manual version 0.06.01
 
 As you can guess from the very low version number, this release
 is alpha quality. Use with caution.
@@ -338,6 +338,10 @@ Please report any bugs or feature requests to
 C<bug-pod-manual@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
+=head1 REPOSITORY
+
+Pod::Manual's development git repository can be accessed at
+http://babyl.dyndns.org/git/pod-manual.git.
 
 =head1 AUTHOR
 
