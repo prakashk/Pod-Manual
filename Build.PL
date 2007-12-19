@@ -14,7 +14,9 @@ my $builder = Module::Build->new(
         'Object::InsideOut' => 0,
         'XML::XPathScript'  => '1.51',
         'Pod::XML'          => 0,
+        'Pod::Usage'        => 0,  # for podmanual
     },
+    script_files        => [ 'script/podmanual' ],
     add_to_cleanup      => [ 'Pod-Manual-*' ],
     create_makefile_pl  => 'passthrough',
     sign                => 1,

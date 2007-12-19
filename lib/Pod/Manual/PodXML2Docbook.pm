@@ -6,6 +6,8 @@ use warnings;
 use XML::XPathScript::Template;
 use XML::XPathScript::Processor;
 
+our $VERSION = '0.08';
+
 our $processor;
 
 our $stylesheet = <<'END_STYLESHEET';
@@ -50,14 +52,18 @@ $template->set( emphasis => {
 
 $template->set( verbatim => { rename => 'screen' } );
 
-0 && $template->set( title => { 
+$template->set( title => { 
     showtag => 1,
     testcode => \&tc_title } );
 
 sub tc_title {
     my ( $n, $t ) = @_;
 
-    my( $abbrev ) = split '-', $n->childNodes->[0]->toString, 2;
+    my $abbrev;
+    if ( $n->parentNode->getName eq "sect1" ) {
+         ( $abbrev ) = eval { split '-', $n->childNodes->[0]->toString, 2 };
+    }
+
     $t->set({ post => "<titleabbrev>$abbrev</titleabbrev>" }) if $abbrev;
 
     return   $n->findvalue( 'text()' ) eq 'DESCRIPTION'

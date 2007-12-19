@@ -7,6 +7,8 @@ use XML::XPathScript::Template;
 use XML::XPathScript::Processor;
 use XML::XPathScript::Stylesheet::DocBook2LaTeX;
 
+our $VERSION = '0.08';
+
 our $stylesheet = <<'END_STYLESHEET';
 <%
     $XML::XPathScript::current->interpolating( 0 );
@@ -18,6 +20,8 @@ our $stylesheet = <<'END_STYLESHEET';
         pre  => '<literal role="code">',
         post => '</literal>' 
     } );
+
+    $XML::XPathScript::Stylesheet::DocBook2LaTeX::uniconvs{ord('\\')} = '$\backslash$';
 %><%~ / %>
 END_STYLESHEET
 
