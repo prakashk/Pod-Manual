@@ -14,29 +14,34 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 536cc8c321050a0bc8b130db2e50ecf888fb874e Build.PL
-SHA1 593319ba96b3e0e93b8d62b48166f8bad967c83d Changes
-SHA1 afdbe62614854ef2c541877cd92dc815526d11be MANIFEST
-SHA1 6d0e33636d200004458e05cdb5b1a17fd3150871 META.yml
-SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
+SHA1 791e15808e787ed4aeef74053d36d2e8c72aeacd Build.PL
+SHA1 23f729296563b4ccf5a2578f999af6ec256146f8 Changes
+SHA1 0a7d7662a0a85691644df3e3c5d8a33ff80bcd99 MANIFEST
+SHA1 f35c506b2c9704c08e28edab1cf7203d2f41bf39 META.yml
+SHA1 f44a610f611cc4333f9a9b52873bc5a35fb7ffb3 Makefile.PL
 SHA1 1f502318b37b017d4f0aef21f2ef180e533094d4 README
-SHA1 78790f0f90c3509c7868b999b9369a5f5a2e788d examples/catalyst_manual.pl
-SHA1 a6523d5e171f0966a99b47cc739dc311015c5cec examples/rose-db-object.pl
-SHA1 2b17bbd303e11bdea8e36829bb8b162428cb705c lib/Pod/Manual.pm
-SHA1 2a508a5c37c97d083155d3a2c453cdd5d3b4584d lib/Pod/Manual/Docbook2LaTeX.pm
-SHA1 fae7f1adda2e8f59cf80bec6077364cd1539618a lib/Pod/Manual/PodXML2Docbook.pm
-SHA1 3759a328521f3ba31e00a62f0213b4ce35d29e71 script/podmanual
-SHA1 93dfdf08dfdfc906e1c99fa7b3bb32df32e4113b t/01general.t
+SHA1 072eb90ac84469abb3087195c7771e456294eb92 examples/catalyst_manual.pl
+SHA1 27eb6669d7ea7233d82778508051dec453a3e5ef examples/rose-db-object.pl
+SHA1 1ee4651c3d47a728c687c4409dd64fb1e7e34c3c examples/xpathscript.pl
+SHA1 1e1d987e68e1e1588fcf976f52aaaba89e7859f3 lib/Pod/Manual.pm
+SHA1 5bcc099d2e4d1fe462278cce14d8cef368fad1cc lib/Pod/Manual/Docbook2LaTeX.pm
+SHA1 604a2f574ba63bf88cd56a37dd8f3e1dcbf64622 lib/Pod/Manual/PodXML2Docbook.pm
+SHA1 dd1b0ddeeb2a39e7a2a8b443a4925028e2aad65d script/podmanual
+SHA1 b1d4ed7b19659642a22b6f7672e2838b92cb6bcf t/01general.t
 SHA1 828067469423ddfe99c7cf961344d8cd921e257e t/02title.t
 SHA1 28a6574eb84d84cb69d551b71bba681b1ac81bbb t/10podmanual.t
-SHA1 a3321ae23a1febb2606d247dc6b8d1caea16f586 t/90pod-coverage.t
-SHA1 ad927b0c794e42c5c75d4d59c8ae7e0ae0e7f5dc t/91perlcritic.t
-SHA1 64d09dde86921bf20644c29d7a47628e12cb3693 t/92pod.t
-SHA1 c0aff3075c78d8a9fd6b991a326fa973103290d3 t/99signature.t
+SHA1 9c4e533c084ea9fd51e9d05195182190bbd58b3b t/lib/Pod/Manual/Test.pm
+SHA1 c48259bf804477b75507fcd38f5e61acab77caf3 t/lib/Pod/ManualTest.pm
+SHA1 f7a92440a7cf1ba1992a7c7425dfbad19f024d07 t/pdf_generator.t
+SHA1 0e9a251657f4998357edaf37efa68d37f2389d9f t/test-class.t
+SHA1 ad927b0c794e42c5c75d4d59c8ae7e0ae0e7f5dc xt/perlcritic.t
+SHA1 a3321ae23a1febb2606d247dc6b8d1caea16f586 xt/pod-coverage.t
+SHA1 64d09dde86921bf20644c29d7a47628e12cb3693 xt/pod.t
+SHA1 c0aff3075c78d8a9fd6b991a326fa973103290d3 xt/signature.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.3 (GNU/Linux)
+Version: GnuPG v2.0.7 (GNU/Linux)
 
-iD8DBQFHaGbk34Hwf+GwC4wRAi4WAKCdP8K9VAFUuLWYYTnaM5DSrcgdgwCg1ym2
-4gCU8+xE/Z8KomoX7R5QJAU=
-=Aztg
+iD8DBQFJPIBE34Hwf+GwC4wRAokSAJ0aPk/fdNArbpFbtZAssbx8FGNH1wCgodjn
+G39nVBLiMeDRfGVQ7t1noNk=
+=QJ0z
 -----END PGP SIGNATURE-----

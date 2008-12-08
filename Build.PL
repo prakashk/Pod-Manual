@@ -12,14 +12,23 @@ my $builder = Module::Build->new(
         'Test::More'        => 0,
         'version'           => 0,
         'Object::InsideOut' => 0,
-        'XML::XPathScript'  => '1.51',
         'Pod::XML'          => 0,
         'Pod::Usage'        => 0,  # for podmanual
+    },
+    recommends => {
+        'XML::XPathScript'  => '1.54',
     },
     script_files        => [ 'script/podmanual' ],
     add_to_cleanup      => [ 'Pod-Manual-*' ],
     create_makefile_pl  => 'passthrough',
     sign                => 1,
+    meta_merge => {
+        resources => {
+            repository => 'git://github.com/yanick/pod-manual.git',
+            bugtracker =>
+            'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Pod-Manual',
+        },
+    },
 );
 
 $builder->create_build_script();

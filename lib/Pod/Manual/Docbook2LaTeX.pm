@@ -7,7 +7,7 @@ use XML::XPathScript::Template;
 use XML::XPathScript::Processor;
 use XML::XPathScript::Stylesheet::DocBook2LaTeX;
 
-our $VERSION = '0.08';
+our $VERSION = '0.08_01';
 
 our $stylesheet = <<'END_STYLESHEET';
 <%
@@ -20,6 +20,11 @@ our $stylesheet = <<'END_STYLESHEET';
         pre  => '<literal role="code">',
         post => '</literal>' 
     } );
+    $template->set( 
+        [ qw/ titleabbrev toc / ] => { 
+            testcode => sub { $DO_NOT_PROCESS } 
+        },
+    );
 
     $XML::XPathScript::Stylesheet::DocBook2LaTeX::uniconvs{ord('\\')} = '$\backslash$';
 %><%~ / %>

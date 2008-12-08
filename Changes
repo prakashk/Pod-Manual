@@ -1,5 +1,10 @@
 Revision history for Pod-Manual
 
+0.08_01
+    - Added Prince PDF generator
+    - Moved author tests to xt
+    - Moved git repository to Github
+
 0.08 18 Dec 2007
     - The title of the manual now default to the shortened title
         of the first added chapter.
