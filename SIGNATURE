@@ -14,18 +14,18 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 791e15808e787ed4aeef74053d36d2e8c72aeacd Build.PL
-SHA1 23f729296563b4ccf5a2578f999af6ec256146f8 Changes
+SHA1 7d8c7b6256c14eb06c4990edb303bb6e303b4278 Build.PL
+SHA1 48ccd2ab6b40b74983db1dac3dfc81109ad72d0c Changes
 SHA1 0a7d7662a0a85691644df3e3c5d8a33ff80bcd99 MANIFEST
-SHA1 f35c506b2c9704c08e28edab1cf7203d2f41bf39 META.yml
+SHA1 221e8493782aa8b19be5706f712500ac64c31d2a META.yml
 SHA1 f44a610f611cc4333f9a9b52873bc5a35fb7ffb3 Makefile.PL
 SHA1 1f502318b37b017d4f0aef21f2ef180e533094d4 README
 SHA1 072eb90ac84469abb3087195c7771e456294eb92 examples/catalyst_manual.pl
 SHA1 27eb6669d7ea7233d82778508051dec453a3e5ef examples/rose-db-object.pl
 SHA1 1ee4651c3d47a728c687c4409dd64fb1e7e34c3c examples/xpathscript.pl
-SHA1 1e1d987e68e1e1588fcf976f52aaaba89e7859f3 lib/Pod/Manual.pm
-SHA1 5bcc099d2e4d1fe462278cce14d8cef368fad1cc lib/Pod/Manual/Docbook2LaTeX.pm
-SHA1 604a2f574ba63bf88cd56a37dd8f3e1dcbf64622 lib/Pod/Manual/PodXML2Docbook.pm
+SHA1 77e2fd2bbc15f32a8b16571fd3c1a2e0aacc1748 lib/Pod/Manual.pm
+SHA1 eeb80f91dde342bc79bb6c8d4eb44fa0e55ef682 lib/Pod/Manual/Docbook2LaTeX.pm
+SHA1 330b079354ecf55f50dd57301eef772adb59a548 lib/Pod/Manual/PodXML2Docbook.pm
 SHA1 dd1b0ddeeb2a39e7a2a8b443a4925028e2aad65d script/podmanual
 SHA1 b1d4ed7b19659642a22b6f7672e2838b92cb6bcf t/01general.t
 SHA1 828067469423ddfe99c7cf961344d8cd921e257e t/02title.t
@@ -41,7 +41,7 @@ SHA1 c0aff3075c78d8a9fd6b991a326fa973103290d3 xt/signature.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.7 (GNU/Linux)
 
-iD8DBQFJPIBE34Hwf+GwC4wRAokSAJ0aPk/fdNArbpFbtZAssbx8FGNH1wCgodjn
-G39nVBLiMeDRfGVQ7t1noNk=
-=QJ0z
+iD8DBQFJP/RY34Hwf+GwC4wRAivnAKCANCL/HAFK+L8l/jhAKwekMMr6kQCfUUgv
+HydZOLElYRhT770/JTVDbuk=
+=bPQn
 -----END PGP SIGNATURE-----

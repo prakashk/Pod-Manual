@@ -1,6 +1,6 @@
 ---
 name: Pod-Manual
-version: 0.08_01
+version: 0.08_02
 author:
   - 'Yanick Champoux <yanick@cpan.org>'
 abstract: Aggregates several PODs into a single manual
@@ -11,6 +11,7 @@ resources:
   repository: git://github.com/yanick/pod-manual.git
 requires:
   Object::InsideOut: 0
+  Pod::2::DocBook: 0.02
   Pod::Usage: 0
   Pod::XML: 0
   Test::More: 0
@@ -21,13 +22,13 @@ recommends:
 provides:
   Pod::Manual:
     file: lib/Pod/Manual.pm
-    version: 0.08_01
+    version: 0.08_02
   Pod::Manual::Docbook2LaTeX:
     file: lib/Pod/Manual/Docbook2LaTeX.pm
-    version: 0.08_01
+    version: 0.08_02
   Pod::Manual::PodXML2Docbook:
     file: lib/Pod/Manual/PodXML2Docbook.pm
-    version: 0.08_01
+    version: 0.08_02
 generated_by: Module::Build version 0.280801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
