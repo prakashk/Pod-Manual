@@ -1,6 +1,6 @@
 ---
 name: Pod-Manual
-version: 0.08_03
+version: 0.08_04
 author:
   - 'Yanick Champoux <yanick@cpan.org>'
 abstract: Aggregates several PODs into a single manual
@@ -23,13 +23,13 @@ recommends:
 provides:
   Pod::Manual:
     file: lib/Pod/Manual.pm
-    version: 0.08_03
+    version: 0.08_04
   Pod::Manual::Docbook2LaTeX:
     file: lib/Pod/Manual/Docbook2LaTeX.pm
-    version: 0.08_03
+    version: 0.08_04
   Pod::Manual::PodXML2Docbook:
     file: lib/Pod/Manual/PodXML2Docbook.pm
-    version: 0.08_03
+    version: 0.08_04
 generated_by: Module::Build version 0.280801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

@@ -15,24 +15,24 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 317c18e9dba4aa994ed8d521d383df5573ba0f82 Build.PL
-SHA1 b574d4f4133325996013a6f8bd3f0fec59820ea3 Changes
+SHA1 97a85614644e7558c5f2894502c969eb2e12518b Changes
 SHA1 0a7d7662a0a85691644df3e3c5d8a33ff80bcd99 MANIFEST
-SHA1 417ff1d153bb5065eeaeadc9711de4078cc937b0 META.yml
+SHA1 7406ae98fd3531ce7f816304cf1b06e763ce56d6 META.yml
 SHA1 f44a610f611cc4333f9a9b52873bc5a35fb7ffb3 Makefile.PL
 SHA1 1f502318b37b017d4f0aef21f2ef180e533094d4 README
 SHA1 072eb90ac84469abb3087195c7771e456294eb92 examples/catalyst_manual.pl
 SHA1 27eb6669d7ea7233d82778508051dec453a3e5ef examples/rose-db-object.pl
 SHA1 1ee4651c3d47a728c687c4409dd64fb1e7e34c3c examples/xpathscript.pl
-SHA1 29b933b30fea3a6c54d055156cd5508888d2dec7 lib/Pod/Manual.pm
-SHA1 286620799d1e10cdada360bbcea127190e1e6b85 lib/Pod/Manual/Docbook2LaTeX.pm
-SHA1 690ac4afe56df68c0a4448a4f7ec6e7e07c5d6f9 lib/Pod/Manual/PodXML2Docbook.pm
+SHA1 3642bb252b3b458f86dbf623a9e51c349e15a194 lib/Pod/Manual.pm
+SHA1 f03e7d0c2e0ab358e75542ad7f00768b80aed990 lib/Pod/Manual/Docbook2LaTeX.pm
+SHA1 ab3df993299bdc6ac3dc5c069d534becfed4669a lib/Pod/Manual/PodXML2Docbook.pm
 SHA1 dd1b0ddeeb2a39e7a2a8b443a4925028e2aad65d script/podmanual
 SHA1 b1d4ed7b19659642a22b6f7672e2838b92cb6bcf t/01general.t
 SHA1 828067469423ddfe99c7cf961344d8cd921e257e t/02title.t
 SHA1 28a6574eb84d84cb69d551b71bba681b1ac81bbb t/10podmanual.t
 SHA1 9c4e533c084ea9fd51e9d05195182190bbd58b3b t/lib/Pod/Manual/Test.pm
 SHA1 c48259bf804477b75507fcd38f5e61acab77caf3 t/lib/Pod/ManualTest.pm
-SHA1 f7a92440a7cf1ba1992a7c7425dfbad19f024d07 t/pdf_generator.t
+SHA1 872d48685b5fab6d3a454c4e97da970205564efe t/pdf_generator.t
 SHA1 1ef76c31190f552a457ae42cdec0e2275dc0c907 t/test-class.t
 SHA1 ad927b0c794e42c5c75d4d59c8ae7e0ae0e7f5dc xt/perlcritic.t
 SHA1 a3321ae23a1febb2606d247dc6b8d1caea16f586 xt/pod-coverage.t
@@ -41,7 +41,7 @@ SHA1 c0aff3075c78d8a9fd6b991a326fa973103290d3 xt/signature.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.7 (GNU/Linux)
 
-iD8DBQFJTntn34Hwf+GwC4wRAlVxAJ4nrQL2kh4Zjpk3yqUiO+ZfwZzZLgCggyAb
-vWBV07s8/ALi3dL8ckPFz8o=
-=PLiQ
+iD8DBQFJWPqQ34Hwf+GwC4wRAri1AJ9JSk0asJZxLE7JT39cbyfWszTfDACgjBcU
+URKK52FBMLQ6ysC8xu/P35o=
+=fsU8
 -----END PGP SIGNATURE-----
